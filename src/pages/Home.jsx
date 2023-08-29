@@ -1,18 +1,42 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import AnimatedLetters from '../utils/AnimatedLetters'
+import dark_logo from '../assets/images/dark_logo.svg'
 import 'animate.css'
-
 const Home = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const nameArray = ['R', 'a', 'b', 'a', 'b', 'e', ' ', 'A', 'z', 'i', 'l', '.']
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [])
+
   return (
     <>
-      <div class="mx-28 flex h-screen items-center animate__animated animate__fadeInTopLeft">
+      <div class="mx-28 flex h-screen items-center animate__animated animate__fadeInTopLeft cursor-pointer">
         <div class="w-[100%] md:w-[50%] ">
-          <h1 class="text-4xl font-bold mb-4 ">
-            Hey There! <br />
+          <h1 class="text-4xl font-bold uppercase mb-4">
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i</span>
+            <span className={`${letterClass} _13`}>,</span>
+            <br />
+            <span className={`${letterClass} _14`}>I</span>
+            <span className={`${letterClass} _15`}>'</span>
+            <span className={`${letterClass} _16`}>m</span>{' '}
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={17}
+            />
           </h1>
-          <p>
-            I'm <mark className="bg-red_ px-2 ">Rababe Azil</mark> A software
-            engineer specializing in MERN stack applications. Holding a
-            bachelor's degree in Computer Science and complementing it with an
+          <p className="">
+            A software engineer specializing in MERN stack applications. Holding
+            a bachelor's degree in Computer Science and complementing it with an
             extensive Data Science BootCamp, I bring a comprehensive skill set
             to the table.
           </p>
@@ -25,7 +49,13 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div></div>
+        <div>
+          <img
+            src={dark_logo}
+            alt="logo"
+            className="animate__animated hidden md:block animate__fadeInRight ml-24"
+          />
+        </div>
       </div>
     </>
   )
