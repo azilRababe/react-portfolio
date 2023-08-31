@@ -19,19 +19,3 @@ body {
   background-color: #011627;
   color: #fdfffc;
 }
-
-.layout {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar {
-  flex: 0 0 250px;
-  background-color: #e71d36;
-  color: #fdfffc;
-}
-
-.content {
-  flex-grow: 1;
-  // padding: 20px;
-}

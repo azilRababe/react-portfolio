@@ -3,7 +3,6 @@ import AnimatedLetters from '../../utils/AnimatedLetters'
 import { DiNodejs } from 'react-icons/di'
 import { AiFillHtml5 } from 'react-icons/ai'
 
-import Particles_bg from '../../components/Particles_bg'
 import {
   BiLogoCss3,
   BiLogoReact,
@@ -29,8 +28,8 @@ const About = () => {
   }, [])
 
   return (
-    <div className="space-y-60 md:space-x-36 md:mx-28 flex md:flex-row items-center justify-center h-screen cursor-pointer animate__animated animate__fadeInTopLeft ">
-      <div className="stage-cube-cont h-screen md:w-1/2 absolute -z-50">
+    <div className="flex h-screen content-center justify-center items-center cursor-pointer animate__animated animate__fadeInTopLeft ">
+      <div className="stage-cube-cont w-full md:w-1/2 absolute -z-10">
         <div className="cubespinner">
           <div className="face1">
             <DiNodejs color="#215732" />
@@ -52,7 +51,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-1/2 px-4 md:px-8 lg:px-12 mx-20">
+      <div className="mx-10 w-full md:w-1/2 mt-80 md:mt-0 md:ml-auto">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">
           <AnimatedLetters
             letterClass={letterClass}

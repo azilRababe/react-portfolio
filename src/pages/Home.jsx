@@ -18,9 +18,9 @@ const Home = () => {
 
   return (
     <>
-      <div class="mx-28 flex h-screen items-center animate__animated animate__fadeInTopLeft cursor-pointer">
-        <div class="w-[100%] md:w-[50%] ">
-          <h1 class="text-4xl font-bold uppercase mb-4">
+      <div class="mx-10 flex h-screen items-center content-center animate__animated animate__fadeInTopLeft cursor-pointer">
+        <div class="w-full md:w-1/2">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i</span>
             <span className={`${letterClass} _13`}>,</span>
@@ -49,7 +49,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="md:w-1/2">
           <img
             src={dark_logo}
             alt="logo"
