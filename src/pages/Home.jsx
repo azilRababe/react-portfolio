@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <>
-      <div class="mx-10 flex h-screen items-center content-center animate__animated animate__fadeInTopLeft cursor-pointer">
+      <div class="flex h-screen items-center content-center animate__animated animate__fadeInTopLeft cursor-pointer">
         <div class="w-full md:w-1/2">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">
             <span className={letterClass}>H</span>

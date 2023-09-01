@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <>
       <div>
-        <div className="sidebar bg-transparent flex flex-row justify-around items-center h-14 absolute bottom-0 w-full z-10 border border-white_ rounded-full ">
+        <div className="sidebar bg-transparent flex flex-row justify-around items-center h-14 absolute bottom-0 w-full z-10 border-t-2 border-white_  rounded-full  ">
           <div className="logo">
             <Link to="/">
               <img src={dark_logo} alt="logo" className="w-8 h-auto md:w-10" />
@@ -31,7 +31,6 @@ const Sidebar = () => {
               exact={true}
               to="/"
               className="group hover:text-red_ transition-colors duration-300 ease-in"
-              activeClassName="text-white"
             >
               <BiHomeSmile className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -42,7 +41,6 @@ const Sidebar = () => {
             <NavLink
               to="/about"
               className="group hover:text-red_ transition-colors duration-300 ease-in"
-              activeClassName="text-coolers_red"
             >
               <BiUser className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -53,7 +51,6 @@ const Sidebar = () => {
             <NavLink
               to="/skills"
               className="group hover:text-red_ transition-colors duration-300 ease-in"
-              activeClassName="text-coolers_red"
             >
               <BiCodeBlock className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -64,7 +61,6 @@ const Sidebar = () => {
             <NavLink
               to="/news"
               className="group hover:text-red_ transition-colors duration-300 ease-in"
-              activeClassName="text-coolers_red"
             >
               <BiNews className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -72,9 +68,8 @@ const Sidebar = () => {
               </span>
             </NavLink>
             <NavLink
-              to="/work"
+              to="/projects"
               className="group hover:text-red_ transition-colors duration-300 ease-in"
-              activeClassName="text-coolers_red"
             >
               <MdOutlineRemoveRedEye className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -84,7 +79,6 @@ const Sidebar = () => {
             <NavLink
               to="/contact"
               className="group hover:text-red_ transition-colors duration-300 ease-in"
-              activeClassName="text-coolers_red"
             >
               <BiPhoneCall className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">

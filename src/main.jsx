@@ -15,14 +15,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         innerSize={8}
         outerSize={35}
         innerScale={1}
-        outerScale={2}
+        outerScale={1.7}
         outerAlpha={0}
-        hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: '#e71d36',
-        }}
         outerStyle={{
           border: '3px solid #e71d36',
+        }}
+        innerStyle={{
+          backgroundColor: '#fdfffc',
         }}
       />
       <App />
