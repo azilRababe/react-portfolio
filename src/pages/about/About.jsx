@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import AnimatedLetters from '../../utils/AnimatedLetters'
 import { DiNodejs } from 'react-icons/di'
-import { AiFillHtml5 } from 'react-icons/ai'
-
 import {
   BiLogoCss3,
   BiLogoReact,
@@ -12,6 +10,7 @@ import {
 import { BsGit } from 'react-icons/bs'
 import 'animate.css'
 import './style.scss'
+import { Link } from 'react-router-dom'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -28,7 +27,7 @@ const About = () => {
   }, [])
 
   return (
-    <div className="flex h-screen content-center justify-center items-center cursor-pointer animate__animated animate__fadeInTopLeft ">
+    <div className="flex h-full content-center justify-center items-center cursor-pointer ">
       <div className="stage-cube-cont w-full md:w-1/2 absolute -z-10">
         <div className="cubespinner">
           <div className="face1">
@@ -52,7 +51,7 @@ const About = () => {
         </div>
       </div>
       <div className="mx-10 w-full md:w-1/2 mt-80 md:mt-0 md:ml-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold uppercase mb-4">
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -60,9 +59,14 @@ const About = () => {
           />
         </h1>
         <p className="text-left">
-          I'm a passionate developer who loves creating interactive web
-          experiences. Whether it's crafting intuitive user interfaces or diving
-          into complex backend logic, I thrive on challenges.
+          I'm a Software Engineer specializing in{' '}
+          <span className="border-b-2 border-red_ hover:text-red_ ">
+            <Link to={'https://www.mongodb.com/mern-stack'}>MERN Stack</Link>
+          </span>{' '}
+          applications. My passion lies in creating captivating and
+          high-performance web solutions that not only meet but exceed your
+          expectations. I'm driven by an unwavering commitment to delivering
+          dynamic and efficient web applications that leave a lasting impact.
         </p>
       </div>
     </div>

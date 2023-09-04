@@ -8,7 +8,7 @@ const Layout = () => {
       <div className="sidebar">
         <Sidebar />
       </div>
-      <div className="content flex-1 p-5 overflow-auto relative mb-14">
+      <div className="content flex-1 p-5 overflow-auto relative ">
         <Outlet />
       </div>
     </div>

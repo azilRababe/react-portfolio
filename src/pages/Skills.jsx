@@ -1,43 +1,53 @@
-import React, { useState, useEffect } from 'react'
-import Tag_Cloud from '../components/Tag_Cloud'
-import 'animate.css'
-import AnimatedLetters from '../utils/AnimatedLetters'
+import React from 'react'
 
 const Skills = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['G', '2 ', 'K', ' ', 'm', 'e', '.']
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-
-    return () => {
-      clearTimeout(timeoutId)
-    }
-  }, [])
-
   return (
-    <div className="flex h-screen content-center justify-center items-center cursor-pointer animate__animated animate__fadeInTopLeft ">
-      <div className="tagCloud w-full md:w-1/2 absolute -z-10 top-0 md:top-20 md:left-20  animate__animated animate__zoomInDown">
-        <Tag_Cloud />
+    <>
+      <div class="p-10 h-full flex flex-col  mx-auto items-center justify-center md:w-3/4">
+        {/* <!-- front-end card --> */}
+        <div class="mb-8 flex justify-between items-center w-full hover:-translate-y-1 hover:scale-105 duration-300 ">
+          <div class="order-1 bg-gray-400 hover:bg-white_ rounded-lg shadow-xl px-6 py-4">
+            <h3 class="mb-3 font-bold text-blue_ text-xl">Front-End </h3>
+            <p class="text-sm leading-snug tracking-wide text-blue_ text-opacity-100">
+              I bring life to your applications with dazzling front-end designs.
+              My toolkit includes React.js, Redux, HTML5, CSS3, and modern
+              JavaScript (ES6+). I create engaging, responsive interfaces that
+              users love, prioritizing aesthetics and usability.
+            </p>
+          </div>
+        </div>
+
+        {/* <!-- full-stack card --> */}
+        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full hover:-translate-y-1 hover:scale-105 duration-300">
+          <div class="order-1 bg-red-400 hover:bg-red_ rounded-lg shadow-xl px-6 py-4">
+            <h3 class="mb-3 font-bold text-blue_ text-xl">Full-Stack</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-blue_ text-opacity-100">
+              My full-stack expertise means I don't just stop at the front or
+              back end; I bring it all together. I deploy applications
+              seamlessly on platforms like Heroku, AWS, and Vercel. Git is my
+              trusty companion for version control, and I optimize code with
+              Webpack and Docker. Your vision, from concept to deployment, is my
+              mission.
+            </p>
+          </div>
+        </div>
+
+        {/* <!-- back-end card --> */}
+        <div class="mb-8 flex justify-between items-center w-full hover:-translate-y-1 hover:scale-105 duration-300">
+          <div class="order-1 bg-gray-400 hover:bg-white_ rounded-lg shadow-xl px-6 py-4">
+            <h3 class="mb-3 font-bold text-blue_ text-xl">Back-End </h3>
+            <p class="text-sm leading-snug tracking-wide text-blue_ text-opacity-100">
+              Behind the scenes, I wield the power of Node.js and Express.js to
+              build robust server-side components. Crafting RESTful APIs is my
+              forte, and I take data security seriously with stringent
+              authentication and authorization measures. Databases, be it
+              MongoDB for flexibility or SQL for structured data, are my
+              playgrounds.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="mx-10 w-full md:w-1/2 mt-80 md:mt-0 md:ml-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase mb-4">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
-        </h1>
-        <p className="text-left">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia
-          possimus in ab est vel accusantium. Enim dignissimos doloremque
-          exercitationem facilis, ut fugiat, blanditiis impedit, soluta tenetur
-          voluptatem recusandae unde!
-        </p>
-      </div>
-    </div>
+    </>
   )
 }
 

@@ -11,19 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Particles_bg />
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={1.7}
-        outerAlpha={0}
-        outerStyle={{
-          border: '3px solid #e71d36',
-        }}
-        innerStyle={{
-          backgroundColor: '#fdfffc',
-        }}
-      />
+      <AnimatedCursor />
       <App />
     </BrowserRouter>
   </React.StrictMode>

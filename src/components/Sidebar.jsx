@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import dark_logo from '../assets/images/dark_logo.svg'
+import { NavLink } from 'react-router-dom'
 
 // icons
 import {
@@ -11,26 +10,18 @@ import {
   BiLogoGithub,
   BiLogoLinkedinSquare,
   BiLogoSlack,
-  BiNews,
 } from 'react-icons/bi'
-import { MdOutlineTipsAndUpdates, MdOutlineRemoveRedEye } from 'react-icons/md'
-
+import { MdOutlineRemoveRedEye } from 'react-icons/md'
 const Sidebar = () => {
   return (
     <>
       <div>
-        <div className="sidebar bg-transparent flex flex-row justify-around items-center h-14 absolute bottom-0 w-full z-10 border-t-2 border-white_  rounded-full  ">
-          <div className="logo">
-            <Link to="/">
-              <img src={dark_logo} alt="logo" className="w-8 h-auto md:w-10" />
-            </Link>
-          </div>
-
+        <div className="sidebar bg-red_ flex flex-row justify-around items-center h-14 absolute bottom-0 w-full z-10">
           <nav className="nav_main flex flex-row space-x-4 md:space-x-6 items-center text-xl md:text-2xl">
             <NavLink
-              exact={true}
+              exact={1}
               to="/"
-              className="group hover:text-red_ transition-colors duration-300 ease-in"
+              className="group hover:text-blue_ transition-colors duration-300 ease-in"
             >
               <BiHomeSmile className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -40,7 +31,7 @@ const Sidebar = () => {
 
             <NavLink
               to="/about"
-              className="group hover:text-red_ transition-colors duration-300 ease-in"
+              className="group hover:text-blue_ transition-colors duration-300 ease-in"
             >
               <BiUser className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -50,7 +41,7 @@ const Sidebar = () => {
 
             <NavLink
               to="/skills"
-              className="group hover:text-red_ transition-colors duration-300 ease-in"
+              className="group hover:text-blue_ transition-colors duration-300 ease-in"
             >
               <BiCodeBlock className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -59,17 +50,8 @@ const Sidebar = () => {
             </NavLink>
 
             <NavLink
-              to="/news"
-              className="group hover:text-red_ transition-colors duration-300 ease-in"
-            >
-              <BiNews className="group-hover:hidden" />
-              <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
-                NEWS
-              </span>
-            </NavLink>
-            <NavLink
               to="/projects"
-              className="group hover:text-red_ transition-colors duration-300 ease-in"
+              className="group hover:text-blue_ transition-colors duration-300 ease-in"
             >
               <MdOutlineRemoveRedEye className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -78,7 +60,7 @@ const Sidebar = () => {
             </NavLink>
             <NavLink
               to="/contact"
-              className="group hover:text-red_ transition-colors duration-300 ease-in"
+              className="group hover:text-blue_ transition-colors duration-300 ease-in"
             >
               <BiPhoneCall className="group-hover:hidden" />
               <span className="hidden text-xs md:text-sm tracking-widest group-hover:block">
@@ -90,21 +72,21 @@ const Sidebar = () => {
           <div className="nav_footer flex flex-row space-x-4 items-center">
             <NavLink
               to="https://github.com/azilRababe"
-              className=" hover:text-red_ transition-colors duration-150 ease-in"
+              className=" hover:text-blue_ transition-colors duration-150 ease-in"
             >
-              <BiLogoGithub />
+              <BiLogoGithub size={18} />
             </NavLink>
             <NavLink
               to="https://www.linkedin.com/in/azilrababe"
-              className=" hover:text-red_ transition-colors duration-150 ease-in"
+              className=" hover:text-blue_ transition-colors duration-150 ease-in"
             >
-              <BiLogoLinkedinSquare />
+              <BiLogoLinkedinSquare size={18} />
             </NavLink>
             <NavLink
               to="#"
-              className=" hover:text-red_ transition-colors duration-150 ease-in"
+              className=" hover:text-blue_ transition-colors duration-150 ease-in"
             >
-              <BiLogoSlack className="" />
+              <BiLogoSlack className="" size={18} />
             </NavLink>
           </div>
         </div>
