@@ -1,209 +1,84 @@
 import React from 'react'
-import Zenova from '../assets/images/Zenova.png'
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-import Slider from 'react-slick'
+import Zenova from '../assets/images/Zenova.jpg'
+import Fb_bg from '../assets/images/Fb_bg.jpg'
+import leWagon_dt from '../assets/images/leWagon_dt.jpg'
+import Shirt_gen from '../assets/images/Shirt_gen.jpg'
+
 import { Link } from 'react-router-dom'
+
 const Projects = () => {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    cssEase: 'linear',
-  }
   return (
-    <Slider {...settings} className="">
-      <div>
-        <div class="h-screen flex items-center justify-center">
-          <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg group">
-            <img
-              src="https://picsum.photos/seed/1840/1000/600"
-              class="object-cover w-full h-full rounded-lg"
-            />
+    // <!-- component -->
+    <div class="px-3 md:lg:xl:px-40 pb-20">
+      <div class="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-transparent text-white_  ">
+        <Link
+          to="https://github.com/azilRababe/Zenova"
+          target="_blank"
+          class="p-10 flex flex-col items-center text-center group hover:bg-white_ cursor-pointer "
+        >
+          <span class="p-5 rounded-full border border-red_ ">
+            <img src={Zenova} alt="" className="rounded-full " />
+          </span>
+          <p class="text-xl font-medium text-slate-700 mt-3">Zenova</p>
+          <p class="mt-2 text-sm text-slate-500">
+            Empowering healthy living through a MERN-based eCommerce platform,
+            offering organic products.
+          </p>
+        </Link>
 
-            <Link
-              to={'https://github.com/azilRababe/zenova'}
-              target="_blank"
-              class="absolute w-full h-full bottom-0 bg-gradient-to-r bg-red_ bg-opacity-60   rounded-lg flex flex-col items-center justify-center text-center"
-            >
-              <p class="text-lg px-14 text-blue_ group-hover:text-white_ mt-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                sed deserunt sunt enim consectetur minus dolores, itaque
-                molestias doloremque odit pariatur? Vitae nemo tempore
-                voluptatem libero dolor quasi optio aliquam?
-              </p>
+        <Link
+          to="https://github.com/azilRababe/Dracarys"
+          target="_blank"
+          class="p-10 flex flex-col items-center text-center group hover:bg-white_ cursor-pointer"
+        >
+          <span class="p-5 rounded-full border border-red_ text-white_  shadow-orange-200">
+            <img src={Fb_bg} alt="" className="rounded-full " />
+          </span>
+          <p class="text-xl font-medium text-slate-700 mt-3">
+            Socail Media application
+          </p>
+          <p class="mt-2 text-sm text-slate-500">
+            A social media app, akin to Facebook, enabling users to post and
+            engage with each other's content.
+          </p>
+        </Link>
 
-              <p class="text-base font-bold px-14 text-blue_ group-hover:text-white_ mt-10">
-                E-commerce MERN Stack Project
-              </p>
+        <Link
+          to="https://github.com/azilRababe/DrowsyAlertApp"
+          target="_blank"
+          class="p-10 flex flex-col items-center text-center group hover:bg-white_ cursor-pointer"
+        >
+          <span class="p-5 rounded-full border border-red_ text-white_  shadow-yellow-200">
+            <img src={leWagon_dt} alt="" className="rounded-full" />
+          </span>
+          <p class="text-xl font-medium text-slate-700 mt-3">
+            Drowsiness Detection System
+          </p>
+          <p class="mt-2 text-sm text-slate-500">
+            Created using Python, Flask, and a TensorFlow-trained model,
+            designed to identify driver fatigue and prevent accidents.
+          </p>
+        </Link>
 
-              <p class="text-sm font-light px-14 text-blue_ group-hover:text-white_ ">
-                Zenova
-              </p>
-            </Link>
-          </card>
-        </div>
+        <Link
+          to="https://github.com/azilRababe/AIWeb3D"
+          target="_blank"
+          class="p-10 flex flex-col items-center text-center group hover:bg-white_ cursor-pointer"
+        >
+          <span class="p-5 rounded-full border border-red_ text-white_  shadow-lime-200">
+            <img src={Shirt_gen} alt="" className="rounded-full " />
+          </span>
+          <p class="text-xl font-medium text-slate-700 mt-3">
+            T-Shirt Design Generator
+          </p>
+          <p class="mt-2 text-sm text-slate-500">
+            A T-shirt design generator powered by OpenAI's GPT-3, crafting
+            unique T-shirt designs tailored to user input.
+          </p>
+        </Link>
       </div>
-      <div>
-        <div class="h-screen flex items-center justify-center">
-          <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg group">
-            <img
-              src="https://picsum.photos/seed/1840/1000/600"
-              class="object-cover w-full h-full rounded-lg"
-            />
-
-            <Link
-              to={'https://github.com/azilRababe/zenova'}
-              target="_blank"
-              class="absolute w-full h-full bottom-0 bg-gradient-to-r bg-red_ bg-opacity-60 hover:bg-opacity-40  rounded-lg flex flex-col items-center justify-center text-center"
-            >
-              <p class="text-lg px-14 text-blue_ group-hover:text-white_ mt-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                sed deserunt sunt enim consectetur minus dolores, itaque
-                molestias doloremque odit pariatur? Vitae nemo tempore
-                voluptatem libero dolor quasi optio aliquam?
-              </p>
-
-              <p class="text-base font-bold px-14 text-blue_ group-hover:text-white_ mt-10">
-                E-commerce MERN Stack Project
-              </p>
-
-              <p class="text-sm font-light px-14 text-blue_ group-hover:text-white_ ">
-                Zenova
-              </p>
-            </Link>
-          </card>
-        </div>
-      </div>
-      <div>
-        <div class="h-screen flex items-center justify-center">
-          <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg group">
-            <img
-              src="https://picsum.photos/seed/1840/1000/600"
-              class="object-cover w-full h-full rounded-lg"
-            />
-
-            <Link
-              to={'https://github.com/azilRababe/zenova'}
-              target="_blank"
-              class="absolute w-full h-full bottom-0 bg-gradient-to-r bg-red_ bg-opacity-60 hover:bg-opacity-40  rounded-lg flex flex-col items-center justify-center text-center"
-            >
-              <p class="text-lg px-14 text-blue_ group-hover:text-white_ mt-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                sed deserunt sunt enim consectetur minus dolores, itaque
-                molestias doloremque odit pariatur? Vitae nemo tempore
-                voluptatem libero dolor quasi optio aliquam?
-              </p>
-
-              <p class="text-base font-bold px-14 text-blue_ group-hover:text-white_ mt-10">
-                E-commerce MERN Stack Project
-              </p>
-
-              <p class="text-sm font-light px-14 text-blue_ group-hover:text-white_ ">
-                Zenova
-              </p>
-            </Link>
-          </card>
-        </div>
-      </div>
-      <div>
-        <div class="h-screen flex items-center justify-center">
-          <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg group">
-            <img
-              src="https://picsum.photos/seed/1840/1000/600"
-              class="object-cover w-full h-full rounded-lg"
-            />
-
-            <Link
-              to={'https://github.com/azilRababe/zenova'}
-              target="_blank"
-              class="absolute w-full h-full bottom-0 bg-gradient-to-r bg-red_ bg-opacity-60 hover:bg-opacity-40  rounded-lg flex flex-col items-center justify-center text-center"
-            >
-              <p class="text-lg px-14 text-blue_ group-hover:text-white_ mt-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                sed deserunt sunt enim consectetur minus dolores, itaque
-                molestias doloremque odit pariatur? Vitae nemo tempore
-                voluptatem libero dolor quasi optio aliquam?
-              </p>
-
-              <p class="text-base font-bold px-14 text-blue_ group-hover:text-white_ mt-10">
-                E-commerce MERN Stack Project
-              </p>
-
-              <p class="text-sm font-light px-14 text-blue_ group-hover:text-white_ ">
-                Zenova
-              </p>
-            </Link>
-          </card>
-        </div>
-      </div>
-      <div>
-        <div class="h-screen flex items-center justify-center">
-          <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg group">
-            <img
-              src="https://picsum.photos/seed/1840/1000/600"
-              class="object-cover w-full h-full rounded-lg"
-            />
-
-            <Link
-              to={'https://github.com/azilRababe/zenova'}
-              target="_blank"
-              class="absolute w-full h-full bottom-0 bg-gradient-to-r bg-red_ bg-opacity-60 hover:bg-opacity-40  rounded-lg flex flex-col items-center justify-center text-center"
-            >
-              <p class="text-lg px-14 text-blue_ group-hover:text-white_ mt-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                sed deserunt sunt enim consectetur minus dolores, itaque
-                molestias doloremque odit pariatur? Vitae nemo tempore
-                voluptatem libero dolor quasi optio aliquam?
-              </p>
-
-              <p class="text-base font-bold px-14 text-blue_ group-hover:text-white_ mt-10">
-                E-commerce MERN Stack Project
-              </p>
-
-              <p class="text-sm font-light px-14 text-blue_ group-hover:text-white_ ">
-                Zenova
-              </p>
-            </Link>
-          </card>
-        </div>
-      </div>
-      <div>
-        <div class="h-screen flex items-center justify-center">
-          <card class="relative h-[30rem] sm:h-96 w-[35rem] rounded-lg group">
-            <img
-              src="https://picsum.photos/seed/1840/1000/600"
-              class="object-cover w-full h-full rounded-lg"
-            />
-
-            <Link
-              to={'https://github.com/azilRababe/zenova'}
-              target="_blank"
-              class="absolute w-full h-full bottom-0 bg-gradient-to-r bg-red_ bg-opacity-60 hover:bg-opacity-40  rounded-lg flex flex-col items-center justify-center text-center"
-            >
-              <p class="text-lg px-14 text-blue_ group-hover:text-white_ mt-10">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
-                sed deserunt sunt enim consectetur minus dolores, itaque
-                molestias doloremque odit pariatur? Vitae nemo tempore
-                voluptatem libero dolor quasi optio aliquam?
-              </p>
-
-              <p class="text-base font-bold px-14 text-blue_ group-hover:text-white_ mt-10">
-                E-commerce MERN Stack Project
-              </p>
-
-              <p class="text-sm font-light px-14 text-blue_ group-hover:text-white_ ">
-                Zenova
-              </p>
-            </Link>
-          </card>
-        </div>
-      </div>
-    </Slider>
+    </div>
   )
 }
 
