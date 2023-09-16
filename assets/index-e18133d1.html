@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rababe Azil - Portfolio</title>
+    <script type="text/javascript">
+      // document.addEventListener('contextmenu', (event) =>
+      //   event.preventDefault()
+      // ) // Disable right-click context menu
+      document.addEventListener('copy', (event) => event.preventDefault()) // Disable copying using keyboard shortcuts
+      document.addEventListener('cut', (event) => event.preventDefault()) // Disable cutting using keyboard shortcuts
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- email -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      ;(function () {
+        emailjs.init('b7fMGYxnVSB2IHtq_')
+      })()
+    </script>
+  </body>
+</html>
